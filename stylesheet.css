@@ -1,0 +1,65 @@
+
+.signup-form {
+    width: 400px;
+    padding: 40px;
+    border-radius: 3px;
+    background: white;
+    margin:auto;
+}
+
+img.analog-logo {
+	padding-bottom: 15px;
+	margin:auto;
+	height:35px;
+	display:block;
+}
+
+h1 {
+	text-align: center;
+	color:blue;
+}
+
+body {
+	margin-top: 60px;
+	background-color: #298eea;
+	font-family: 'Roboto', helvetica, sans-serif;
+}
+
+input {
+	font-size: 20px;
+	height:40px;
+	width:320px;
+}
+
+legend {
+	margin:auto;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.signup-form label{
+	display:block;
+	margin-bottom: 15px;
+}
+
+.signup-form input{
+	margin-bottom: 15px;
+}
+
+button {
+	height:55px;
+	width: 320px;
+	background-color: #15CD72;
+	border:0;
+	font-size: 22px;
+	color:white;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    font-weight: 600;
+    border: 0;
+    padding: 0;
+}
