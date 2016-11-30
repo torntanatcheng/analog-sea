@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Analog Sea</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>AnalogSea</title>
+
+<link rel="stylesheet" href="stylesheet.css" />
+
+<!-- seo goodies -->
+
 </head>
 <body>
-	<img src="analog-sea-logo.png" class="analog-logo">
-		<form class="signup-form" action="/signup" accept-charset="UTF-8" method="post">	
-			<legend>Sign up</legend>
-			
-			<label for="email">Email</label>
-			<input placeholder="foo@bar.com" type="text" name="email" id="email" required/>
-			
-			<label for="password">Password</label>
-			<input placeholder="1234password" type="text" name="password" id="password" required/>
-			
-			<button type="signup">Sign Up</button>
-			<p><a href="/forgot-password/new">Forgot password?</a></p>
-		</form>
-		
-		<div class="footer">
-			<p>Already have an account? <a href="/login">Log in</a></p>
-		</div>
+
+  <img class="logo" src="logo.png" alt="AnalogSea logo" />
+
+
+  <form class="signup-form" action="/signup" accept-charset="UTF-8" method="post">
+
+    <legend>Sign up</legend>
+
+    <label for="user-email">Email</label>
+    <input type="email" placeholder="foo@bar.com" name="user-email" id="user_email" required/>
+
+    <label for="user-password">Password</label>
+    <input placeholder="1234passw0rd" label="false" type="password" name="user-password" id="user-password" required/>
+
+    <button type="submit"/>Sign up</button>
+
+    <p><a href="/forgot_password/new">Forgot password?</a></p>
+  </form>
+
+  <div class='footer'>
+    <p>Already have an account? <a href="/login">Log in</a></p>
+  </div>
 </body>
 </html>

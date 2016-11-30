@@ -1,60 +1,108 @@
+body {
+    background: #298eea;
+    font-family: 'Roboto', helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    height: 35px;
+    width: auto;
+    margin: 0 auto 30px;
+}
+
 
 .signup-form {
+    margin: 0 auto;
     width: 400px;
     padding: 40px;
     border-radius: 3px;
     background: white;
-    margin:auto;
 }
 
-img.analog-logo {
-	padding-bottom: 15px;
-	margin:auto;
-	height:35px;
-	display:block;
+.signup-form legend {
+    text-align: center;
+    font-weight: 300;
+    color: #565656;
+    margin: 0 auto 45px;
+    font-size: 35px;
+    line-height: 38px;
+    letter-spacing: 0;
 }
 
-h1 {
-	text-align: center;
-	color:blue;
+/* button ultimately ultimately gets a different background
+color below, but because it largely overlaps with email/password
+input styling, we include it in the same style block, then
+override, below. */
+input[type='email'],
+input[type='password'],
+button[type='submit'] {
+    background: #fcfcfc;
+    border: 2px solid #e7e7e7;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    transition: opacity 0.4s;
+    text-align: left;
+    height: auto;
 }
 
-body {
-	margin-top: 60px;
-	background-color: #298eea;
-	font-family: 'Roboto', helvetica, sans-serif;
+input[type='email']:focus,
+input[type='password']:focus,
+button[type='submit']:focus {
+    border-color: #E7E7E7;
+    box-shadow: none;
 }
 
-input {
-	font-size: 20px;
-	height:40px;
-	width:320px;
+button[type='submit'] {
+    color: white;
+    background: #15CD72;
+    border: 0;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    height: auto;
 }
 
-legend {
-	margin:auto;
-	font-size: 30px;
-	padding-bottom: 30px;
+button:hover[type='submit'] {
+    background-color: #0CB863;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
 }
 
-.signup-form label{
-	display:block;
-	margin-bottom: 15px;
+.signup-form p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: #999;
 }
 
-.signup-form input{
-	margin-bottom: 15px;
+.signup-form a {
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid #bbb;
 }
 
-button {
-	height:55px;
-	width: 320px;
-	background-color: #15CD72;
-	border:0;
-	font-size: 22px;
-	color:white;
+.signup-form a:hover {
+    border-color: #999;
+    color: #777;
 }
 
+/* footer */
 .footer {
     text-align: center;
     color: white;
@@ -63,3 +111,11 @@ button {
     border: 0;
     padding: 0;
 }
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover { color: #E7F1F9 }
+
+.footer p { margin-bottom: 40px }
